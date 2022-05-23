@@ -240,7 +240,7 @@ def onmessage(update,bot:ObigramClient):
         tl_admin_user = os.environ.get('tl_admin_user','*')
 
         #Descomentar debajo solo si se ba a poner el usuario admin de telegram manual
-        #tl_admin_user = '*'
+        #tl_admin_user = 'lil_l4chy'
 
         jdb = JsonDatabase('database')
         jdb.check_create()
@@ -476,8 +476,8 @@ def onmessage(update,bot:ObigramClient):
         thread.store('msg',message)
 
         if '/start' in msgText:
-            start_msg = 'Bot          : TGUploaderPro v7.0 Fixed\n'
-            start_msg+= 'Desarrollador: @obisoftdevel\n'
+            start_msg = 'Bot          : Un bot ahi\n'
+            start_msg+= 'Administrador: @lil_l4chy\n'
             start_msg+= 'Api          : https://github.com/ObisoftDev/tguploaderpro\n'
             start_msg+= 'Uso          :Envia Enlaces De Descarga y Archivos Para Procesar (Configure Antes De Empezar , Vea El /tutorial)\n'
             bot.editMessageText(message,start_msg)
@@ -559,7 +559,7 @@ def main():
     bot_token = os.environ.get('bot_token')
 
     #decomentar abajo y modificar solo si se va a poner el token del bot manual
-    #bot_token = 'BOT TOKEN'
+    #bot_token = '5392286715:AAFaSNl_O-hhcEUf_4YzRTmdXKqAJvQxkhk'
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
